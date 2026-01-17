@@ -1,13 +1,13 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: "https://cnr-chat-2.onrender.com/api",
+  baseURL: "https://cnr-chat-2.onrender.com",
   headers: {
     "Content-Type": "application/json",
   },
 });
 
-// Always attach latest token
+// Attach token automatically
 axiosInstance.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem("token");
