@@ -5,7 +5,7 @@ import Sidebar from "./components/sidebar";
 import { io } from "socket.io-client";
 import { useEffect, useState } from "react";
 
-const socket = io("https://cnr-chat-server.onrender.com", {
+const socket = io("https://cnr-chat-2.onrender.com", {
   transports: ["websocket", "polling"],
 });
 
