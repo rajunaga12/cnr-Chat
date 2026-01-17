@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-  baseURL: "https://cnr-chat-server.onrender.com/api",
+  baseURL: "https://cnr-chat-2.onrender.com/api",
   headers: {
     "Content-Type": "application/json",
   },
